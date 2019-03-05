@@ -1,0 +1,117 @@
+body > header{
+    padding: 15px
+}
+body > header > div{
+    height: 60px;
+    background-color: #733d02;
+    border-radius: 5px;
+    border: #9b4f00 5px solid
+}
+body > header .nav_bar{
+    padding-top: 9px;
+    display: inline-block
+}
+body > header .nav_bar .nav_bar_item{
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+body > header .nav_bar .nav_bar_item + .nav_bar_item{
+    margin-left: 50px
+}
+body > header .nav_bar .nav_bar_item > div{
+    position: relative;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer
+}
+body > header .nav_bar .nav_bar_item > div:hover{
+    background-color: #451d00
+}
+body > header .search_box .input-group{
+    width: 250px;
+    height: 35px;
+    background-color: #451d00;
+    border-radius: 100px;
+    padding: 2px
+}
+body > header .search_box .input-group-text, 
+body > header .search_box .form-control
+{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+body > header .search_box{
+    padding-top: 8px
+}
+body > header .nav_bar .nav_bar_item .sub_menu{
+    border-radius: 5px;
+    border: #9b4f00 5px solid;
+    background-color: #451d00;
+    width: 200px;
+    display: none
+}
+body > header .nav_bar .nav_bar_item .sub_menu .sub_menu_item{
+    padding: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+body > header .nav_bar .nav_bar_item .sub_menu .sub_menu_item + .sub_menu_item{
+    border-top: #9b4f00 5px solid
+}
+body > header .nav_bar .nav_bar_item .sub_menu .sub_menu_item:hover{
+    background-color: #733d02
+}
+body > header .menu_icon{
+    display: none;
+    padding-top: 8px
+}
+body > header .menu_icon img{
+    width: 35px;
+    height: 35px
+}
+@media(min-width: 950px){
+    body > header .nav_bar .nav_bar_item .sub_menu{
+        position: absolute;
+        left: 0;
+        top: 60px;
+    }
+}
+@media(max-width: 950px){
+    body > header .nav_bar{
+        position: absolute;
+        left: 0;
+        right: 0px;
+        top: 60px;
+        width: 100%;
+        background-color: #9b4f00;
+        display: none;
+    }
+    body > header .menu_icon{
+        display: inline-block
+    }
+    body > header .nav_bar .nav_bar_item + .nav_bar_item{
+        margin-left: 0px
+    }
+    body > header .nav_bar .nav_bar_item{
+        display: block;
+        width: 100%;
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: #733d02 1px solid
+    }
+    body > header .nav_bar .nav_bar_item > div:hover{
+        background-color: transparent
+    }
+    body > header .nav_bar .nav_bar_item:hover{
+        background-color: #451d00
+    }
+    body > header .nav_bar .nav_bar_item .sub_menu{
+        margin-top: 10px
+    }
+    
+}
